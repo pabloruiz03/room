@@ -24,7 +24,7 @@ data class Job(
     @ColumnInfo(name = "location") val location: String,
     @ColumnInfo(name = "start_date") val startDate: String,
     @ColumnInfo(name = "end_date") val endDate: String,
-    @ColumnInfo(name = "job_type") val jobType: String // e.g., "Painting", "Wallpapering", "Both"
+    @ColumnInfo(name = "job_type") val jobType: String
 )
 
 @Dao

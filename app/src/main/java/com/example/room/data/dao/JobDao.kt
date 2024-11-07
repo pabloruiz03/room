@@ -8,7 +8,7 @@ import com.example.room.data.models.Job
 @Dao
 interface JobDao {
     @Insert
-    suspend fun insert(job: Job) // Este método sí debe ser suspend
+    suspend fun insert(job: Job)
 
     @Query("SELECT * FROM jobs ORDER BY dateFrom ASC")
     fun getAllJobs(): kotlinx.coroutines.flow.Flow<List<Job>>
